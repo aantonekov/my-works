@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'GoogleSansRegular';
+    src: url(../fonts/Google-Sans/GoogleSans-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GoogleSansMedium';
+    src: url(../fonts/Google-Sans/GoogleSans-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;    
+}
+
+@font-face {
+    font-family: 'GoogleSansBold';
+    src: url(../fonts/Google-Sans/GoogleSans-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+

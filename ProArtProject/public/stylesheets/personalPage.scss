@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+@mixin textParam {
+    font-family: 'Unica One', cursive;
+    letter-spacing: 2px;
+}
+
+@mixin buttonSubmitParam {
+    margin: 25px 0 0 0;
+    width: 200px;
+    border: rgb(0, 0, 0);
+    background-color: grey;
+    font-size: 25px;
+    font-weight: 600;
+    @include textParam;
+}
+
+@mixin buttonIconParam {
+    width: 40px;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin: 0 5% 0 0;
+    border: 1px solid rgb(221, 220, 220);
+}
+
+// @mixin display ($display, $justify) {
+//     display: $display;
+//     justify-content: $justify;
+// }
+
+// @include display (flex, flex-start);
+
+
+::before::after {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.mainContainer {
+    display: flex;
+
+    .photographerSide {
+        width: 15%;
+        min-height: 1000px;
+        width: 300px;
+        box-shadow: 8px 1px 10px 0px rgba(0, 0, 0, 0.22);
+        background-image: url(../images/personalPage/pexels-ruvim-10042038.jpg);
+        background-position: center;
+        background-size: 1000px;
+
+        .photographerAvatar {
+            margin: 10%;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                border-radius: 50%;
+                height: 150px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .photographerName {
+            @include textParam;
+            font-size: 40px;
+            font-weight: 600;
+            width: 250px;
+            text-align: center;
+            text-shadow: 1px 3px 2px rgb(180, 180, 180);
+        }
+
+        .lineBetween {
+            margin: 20% 10%;
+
+            img {
+                width: 180px;
+            }
+        }
+
+        .menuProfile {
+            margin: 10%;
+
+            ol {
+                list-style-type: none;
+                padding: 0;
+
+                li {
+                    margin: 30px 0;
+                    @include textParam;
+                    font-size: 25px;
+
+                    a {
+                        color: #616161;
+                    }
+
+                    a:hover {
+                        color:rgb(36, 36, 36);
+                    }
+
+                    .logout {
+                        
+                        .button {
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contentSide {
+        width: 85%;
+        overflow-y: auto;
+        padding: 20px;
+        margin-left: 5%;
+
+        .editProfile {
+
+            .personalInform {
+
+                .currentInformation {
+                    width: 400px;
+                    margin: 0 0 5% 0;
+
+                    h3 {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 40px;
+                        text-shadow: 1px 3px 2px rgb(180, 180, 180);
+                        margin: 10% 0;
+                        border-bottom: 2px groove grey;
+                    }
+
+                    div {
+                        height: 30px;
+                        min-height: 25px;
+                        margin-bottom: 25px;
+
+                        p {
+                            padding: 0;
+                            margin: 0;
+                            @include textParam;
+                            font-size: 25px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .editInfoContainer {
+                    width: 600px;
+
+                    h3 {
+                        margin: 0;
+
+                        a {
+                            @include textParam;
+                            font-weight: 600;
+                            font-size: 40px;
+                            margin: 0;
+                        } 
+                    }
+
+                    .editPhotogrpherProfile {
+
+                       .upMenu {
+                           width: 40px;
+                           height: 40px;
+
+                           i {
+                               font-size: 25px;
+                           }
+                       } 
+    
+                       .inputsPersonalInfo {
+                            padding-top: 5%;
+
+                            input {
+                                @include textParam;
+                                font-size: 25px;
+                                width: 500px;
+                            }
+        
+                            .editAvatar {
+                                margin-top: 20px;
+                                                        
+                                input {
+                                    font-size: 15px;
+                                    width: 300px;
+                                }
+                            }
+                       }
+                    }
+    
+                    .message {
+                        @include textParam;
+                        font-size: 25px;
+                    }
+
+                    .editPassword {
+
+                        .upMenu {
+                            width: 40px;
+                            height: 40px;
+ 
+                            i {
+                                font-size: 25px;
+                            }
+                        } 
+ 
+                        .editProfilePass {
+                            padding-top: 5%;
+
+                            .inputPass {
+                                display: flex;
+    
+                                input {
+                                    @include textParam;
+                                    font-size: 25px;
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+
+                        .successPwd {
+                            @include textParam;
+                            font-size: 25px;
+                        }
+                    }
+        
+                    .signBtn {
+                        @include buttonSubmitParam;
+                    }
+                }
+            }
+        }
+
+        .myAlbums {
+
+            h2 {
+                width: 70%;
+                margin: 5% 0;
+                @include textParam;
+                font-weight: 600;
+                font-size: 40px;
+                text-shadow: 1px 3px 2px rgb(180, 180, 180);
+            }
+
+            .currentAlbums {
+                border-radius: 5px;
+
+                .albumAction {
+                    width: 30%;
+                    display: flex;
+                    justify-content: flex-start;
+    
+                    button {
+                        @include buttonIconParam
+                    }
+                }
+                
+                .albumList {
+                    margin: 5% 0;
+
+                    div {
+                        margin: 2% 0;
+
+                        span {
+                            @include textParam;
+                            font-size: 25px;
+                            color: #616161;
+                            margin-right: 5%;
+                        }
+                    }
+                }
+            }
+
+            .createAlbBlock {
+                width: 70%;
+                margin-top: 5%;
+
+                .titleMenuAlb {
+                    display: flex;
+
+                    button {
+                        @include buttonIconParam
+                    }
+    
+                    h3 {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 40px;
+                        margin: 0;
+                    }
+                }
+
+                .albumForm {
+                    p {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 25px;
+                        margin: 0;
+                        padding: 0;
+                    }
+    
+                    div {
+                        margin: 7% 0;
+    
+                        input {
+                            @include textParam;
+                            font-size: 25px;
+                        }
+                    }
+    
+                    .photoPrice {
+                        display: flex;
+                    }
+    
+                    .signBtn {
+                        @include buttonSubmitParam;
+                    }
+                }
+            }
+        }
+
+        .albumImgPage {
+
+            .albumImagesConteiner {
+
+                .imageAction {
+                    width: 30%;
+                    display: flex;
+                    justify-content: flex-start;
+    
+                    button {
+                        @include buttonIconParam
+                    }
+                }
+    
+                .titleMenuAlb {
+                    display: flex;
+                    margin: 10px 0 0 5px;
+    
+                    button {
+                        @include buttonIconParam
+                    }
+    
+                    h3 {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 40px;
+                        margin: 0;
+                    }
+                }
+    
+                .descrption {
+                    @include textParam;
+                    font-size: 25px;
+                    color: #616161;
+                    margin-top: 20px;
+                }
+    
+                .imagesContainer {
+                    width: 90%;
+                    padding-top: 1%;
+                    margin-top: 5%;
+                    border-radius: 5px;
+
+                    .checkBoxImg {
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+    
+                        .imageBlock {
+                            width: 230px;
+                            height: 200px;
+                            overflow: hidden;
+                            position: relative;
+                            border: 1px solid rgb(204, 204, 204);
+                            border-radius: 5px;
+                            margin: 1%;
+        
+                            .checkInp {
+                                margin: 5px;
+                            }
+        
+                            img {
+                                max-width: 200px;
+                                max-height: 200px;
+                                padding: 5px;
+                                position: absolute;
+                                top: 50%;
+                                left: 55%;
+                                transform: translate(-50%, -50%);
+                            }               
+                        }
+                    }
+    
+                }
+
+                .msgDelete {
+                    margin: 3% 0;
+
+                    p {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 25px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+
+            .addImageBlock {
+
+                .titleMenuAlb {
+                    display: flex;
+                    margin-top: 10px;
+    
+                    button {
+                        @include buttonIconParam
+                    }
+    
+                    h3 {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 40px;
+                        margin: 0;
+                    }
+                }
+    
+                .addImage {
+                    p {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 25px;
+                        margin: 20px 0 0 0;
+                    }
+
+                    div {
+                        margin: 7% 0;
+
+                        input {
+                            @include textParam;
+                            font-size: 25px;
+                        }
+                    }
+
+                    .signBtn {
+                        @include buttonSubmitParam;
+                    }
+                }
+
+                .warnMsg, .warnUploadImgMsg {
+
+                    p {
+                        @include textParam;
+                        font-weight: 600;
+                        font-size: 25px;
+                        margin: 20px 0 0 0;
+                    }
+                }
+            }
+        }
+
+        .myOrders {
+            h2 {
+                width: 70%;
+                margin: 5% 0;
+                @include textParam;
+                font-weight: 600;
+                font-size: 40px;
+                text-shadow: 1px 3px 2px rgb(180, 180, 180);
+            }
+
+            .orderList {
+                @include textParam;
+                font-size: 25px;
+
+                .tbodyOrders {
+                    font-size: 20px;
+                }
+
+            }
+
+        }
+    }
+}

@@ -1,0 +1,61 @@
+<% layout('photografPage') -%>
+<% script('/javascripts/albumPage.js') -%>
+
+<div class="albumImgPage">
+
+    <div class="albumImagesConteiner">
+        
+        <div class="titleMenuAlb">
+            <button type="click" class="backMenuBtn"><i class="material-icons center">arrow_back</i></button>
+            <h3 class="titleAlbum"></h3>
+        </div>
+
+        <div class="descrption"></div>
+
+        <div class="imagesContainer">
+            <form name="checkedImagesForm">
+
+                <div class="imageAction">
+                    <button type="click" class="addImgBtn" ><i class="material-icons center">create_new_folder</i></button>
+                    <button type="submit" class="deleteImgBtn"><i class="material-icons center">delete_forever</i></button>
+                </div>
+                
+                <div class="checkBoxImg"></div>
+
+            </form>
+        </div>
+
+        <div class="msgDelete hidden"><p>Files was deleted. Update the page to see updatings.</p></div>
+
+    </div>
+
+    <div class="addImageBlock hidden">
+
+        <div class="titleMenuAlb">
+            <button type="click" class="backAlbBtn"><i class="material-icons center">arrow_back</i></button>
+            <h3>Add images</h3>
+        </div>
+
+        <div class="addImage">
+            <form name="addImagesForm" >
+
+                <p>You can upload min 2 photos and max 50 photos in one time.</p>
+                <div class="imgInp">
+                    <input type="file" name="uploadsArray" accept=".png, .jpg, .jpeg" multiple>
+                </div>
+
+                <button type="submit" class="btn signBtn">
+                    Create <i class="material-icons right">send</i>
+                </button>
+
+            </form>
+        </div>
+
+        <div class="warnMsg hidden"><p>Album has already exist files with such names.</p></div>
+        <div class="warnUploadImgMsg hidden">Sorry! There is some mistakes in uploads. Try again later, please.</div>
+    </div>
+
+</div>
+
+
+

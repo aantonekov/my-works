@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+::before::after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.mainContainer {
+  display: flex;
+}
+.mainContainer .photographerSide {
+  width: 15%;
+  min-height: 1000px;
+  width: 300px;
+  box-shadow: 8px 1px 10px 0px rgba(0, 0, 0, 0.22);
+  background-image: url(../images/personalPage/pexels-ruvim-10042038.jpg);
+  background-position: center;
+  background-size: 1000px;
+}
+.mainContainer .photographerSide .photographerAvatar {
+  margin: 10%;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.mainContainer .photographerSide .photographerAvatar img {
+  border-radius: 50%;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainContainer .photographerSide .photographerName {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 600;
+  width: 250px;
+  text-align: center;
+  text-shadow: 1px 3px 2px #b4b4b4;
+}
+.mainContainer .photographerSide .lineBetween {
+  margin: 20% 10%;
+}
+.mainContainer .photographerSide .lineBetween img {
+  width: 180px;
+}
+.mainContainer .photographerSide .menuProfile {
+  margin: 10%;
+}
+.mainContainer .photographerSide .menuProfile ol {
+  list-style-type: none;
+  padding: 0;
+}
+.mainContainer .photographerSide .menuProfile ol li {
+  margin: 30px 0;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.mainContainer .photographerSide .menuProfile ol li a {
+  color: #616161;
+}
+.mainContainer .photographerSide .menuProfile ol li a:hover {
+  color: #242424;
+}
+.mainContainer .photographerSide .menuProfile ol li .logout .button {
+  width: 100px;
+  height: 100px;
+}
+.mainContainer .contentSide {
+  width: 85%;
+  overflow-y: auto;
+  padding: 20px;
+  margin-left: 5%;
+}
+.mainContainer .contentSide .editProfile .personalInform .currentInformation {
+  width: 400px;
+  margin: 0 0 5% 0;
+}
+.mainContainer .contentSide .editProfile .personalInform .currentInformation h3 {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  text-shadow: 1px 3px 2px #b4b4b4;
+  margin: 10% 0;
+  border-bottom: 2px groove grey;
+}
+.mainContainer .contentSide .editProfile .personalInform .currentInformation div {
+  height: 30px;
+  min-height: 25px;
+  margin-bottom: 25px;
+}
+.mainContainer .contentSide .editProfile .personalInform .currentInformation div p {
+  padding: 0;
+  margin: 0;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer {
+  width: 600px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer h3 {
+  margin: 0;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer h3 a {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPhotogrpherProfile .upMenu {
+  width: 40px;
+  height: 40px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPhotogrpherProfile .upMenu i {
+  font-size: 25px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPhotogrpherProfile .inputsPersonalInfo {
+  padding-top: 5%;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPhotogrpherProfile .inputsPersonalInfo input {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+  width: 500px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPhotogrpherProfile .inputsPersonalInfo .editAvatar {
+  margin-top: 20px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPhotogrpherProfile .inputsPersonalInfo .editAvatar input {
+  font-size: 15px;
+  width: 300px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .message {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPassword .upMenu {
+  width: 40px;
+  height: 40px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPassword .upMenu i {
+  font-size: 25px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPassword .editProfilePass {
+  padding-top: 5%;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPassword .editProfilePass .inputPass {
+  display: flex;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPassword .editProfilePass .inputPass input {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+  padding-left: 15px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .editPassword .successPwd {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.mainContainer .contentSide .editProfile .personalInform .editInfoContainer .signBtn {
+  margin: 25px 0 0 0;
+  width: 200px;
+  border: black;
+  background-color: grey;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+}
+.mainContainer .contentSide .myAlbums h2 {
+  width: 70%;
+  margin: 5% 0;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  text-shadow: 1px 3px 2px #b4b4b4;
+}
+.mainContainer .contentSide .myAlbums .currentAlbums {
+  border-radius: 5px;
+}
+.mainContainer .contentSide .myAlbums .currentAlbums .albumAction {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+.mainContainer .contentSide .myAlbums .currentAlbums .albumAction button {
+  width: 40px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 5% 0 0;
+  border: 1px solid #dddcdc;
+}
+.mainContainer .contentSide .myAlbums .currentAlbums .albumList {
+  margin: 5% 0;
+}
+.mainContainer .contentSide .myAlbums .currentAlbums .albumList div {
+  margin: 2% 0;
+}
+.mainContainer .contentSide .myAlbums .currentAlbums .albumList div span {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: #616161;
+  margin-right: 5%;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock {
+  width: 70%;
+  margin-top: 5%;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .titleMenuAlb {
+  display: flex;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .titleMenuAlb button {
+  width: 40px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 5% 0 0;
+  border: 1px solid #dddcdc;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .titleMenuAlb h3 {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .albumForm p {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .albumForm div {
+  margin: 7% 0;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .albumForm div input {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .albumForm .photoPrice {
+  display: flex;
+}
+.mainContainer .contentSide .myAlbums .createAlbBlock .albumForm .signBtn {
+  margin: 25px 0 0 0;
+  width: 200px;
+  border: black;
+  background-color: grey;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imageAction {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imageAction button {
+  width: 40px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 5% 0 0;
+  border: 1px solid #dddcdc;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .titleMenuAlb {
+  display: flex;
+  margin: 10px 0 0 5px;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .titleMenuAlb button {
+  width: 40px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 5% 0 0;
+  border: 1px solid #dddcdc;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .titleMenuAlb h3 {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .descrption {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+  color: #616161;
+  margin-top: 20px;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imagesContainer {
+  width: 90%;
+  padding-top: 1%;
+  margin-top: 5%;
+  border-radius: 5px;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imagesContainer .checkBoxImg {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imagesContainer .checkBoxImg .imageBlock {
+  width: 230px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 1%;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imagesContainer .checkBoxImg .imageBlock .checkInp {
+  margin: 5px;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .imagesContainer .checkBoxImg .imageBlock img {
+  max-width: 200px;
+  max-height: 200px;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .msgDelete {
+  margin: 3% 0;
+}
+.mainContainer .contentSide .albumImgPage .albumImagesConteiner .msgDelete p {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .titleMenuAlb {
+  display: flex;
+  margin-top: 10px;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .titleMenuAlb button {
+  width: 40px;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 0 5% 0 0;
+  border: 1px solid #dddcdc;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .titleMenuAlb h3 {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .addImage p {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 20px 0 0 0;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .addImage div {
+  margin: 7% 0;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .addImage div input {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .addImage .signBtn {
+  margin: 25px 0 0 0;
+  width: 200px;
+  border: black;
+  background-color: grey;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+}
+.mainContainer .contentSide .albumImgPage .addImageBlock .warnMsg p, .mainContainer .contentSide .albumImgPage .addImageBlock .warnUploadImgMsg p {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 20px 0 0 0;
+}
+.mainContainer .contentSide .myOrders h2 {
+  width: 70%;
+  margin: 5% 0;
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 40px;
+  text-shadow: 1px 3px 2px #b4b4b4;
+}
+.mainContainer .contentSide .myOrders .orderList {
+  font-family: "Unica One", cursive;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.mainContainer .contentSide .myOrders .orderList .tbodyOrders {
+  font-size: 20px;
+}/*# sourceMappingURL=personalPage.css.map */

@@ -1,0 +1,64 @@
+<div class="signWindow hidden">
+
+    <form method="POST" name="signForm">
+
+      <div class="createLoginUser">
+        <label><i class="material-icons">person_outline</i></label>
+        <input type="text" name="login" placeholder="Create your login" pattern="[A-Za-z]{3,}">
+      </div>
+
+      <div class="firstName">
+        <input type="text" name="firstName" placeholder="First name" pattern="[A-Za-z]{3,}">
+      </div>
+
+      <div class="secondName">
+        <input type="text" name="secondName" placeholder="Second name" pattern="[A-Za-z]{3,}">
+      </div>
+
+      <div class="birthday">
+        <input type="date" name="birthday" placeholder="Birthday">
+      </div>
+
+      <div class="checkingAge hidden">
+        <span>You have no 18 years. </span>
+      </div>
+
+      <div class="email">
+        <input type="email" name="email" placeholder="E-mail" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+      </div>
+
+      <div class="phone">
+        <input type="number" name="phone" placeholder="Phone number" pattern="[0-9]{5,20}">
+      </div>
+
+      <div class="createPwdUser">
+        <label><i class="material-icons">lock_outline</i></label>
+        <input type="password" name="pwdUser" placeholder="Create your password">
+      </div>
+
+      <div class="pwdUserRepeat">
+        <label><i class="material-icons">lock_outline</i></label>
+        <input type="password" name="pwdRepeat" placeholder="Repeat your password">
+      </div>
+
+      <div class="checkingPwd hidden">
+        <span>Invalid passwords.</span>
+      </div>
+
+      <div class="avatar">
+        <label><i class="material-icons">add_a_photo</i></label>
+        <input type="file" name="userPhoto">
+      </div>
+
+      <div class="agreement">
+        <input type="checkbox" name="agreeCheck">
+        <span>I agree with <a href="/agreement"> Agreement</a> </span>
+      </div>
+
+      <button type="submit" class="btn signBtn">
+        Sign
+        <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+  </div>

@@ -1,0 +1,31 @@
+<div class="loginWindow">
+
+    <form method="POST" name="loginForm">
+
+      <div class="loginUser">
+        <label><i class="material-icons">person_outline</i></label>
+        <input type="text" name="login" placeholder="Enter your login">
+      </div>
+
+      <div class="pwdUser">
+        <label><i class="material-icons">lock_outline</i></label>
+        <input type="password" name="pwdUser" placeholder="Enter your password">
+      </div>
+
+      <button type="submit" class="btn loginBtn">
+        Login
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+
+    <a href="/login" class="singNewUser">Have no account? Sign here.</a><br>
+
+  </div>
+
+  <div class="messageDeclare hidden">
+    <span>
+        There isn't such Login or Password.<br><br>
+        Repeat <a href="/login" class="loginAgain">Login</a> or
+        <a href="/login" class="singUser">Create account</a>
+    </span>
+  </div>

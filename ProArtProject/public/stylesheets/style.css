@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+::before::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/login/background.jpg);
+}
+
+h1, h2 {
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.mistake {
+  border: 2px solid red;
+}
+
+.centercontainer {
+  width: 45%;
+  min-height: 350px;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.centercontainer .loginWindow {
+  margin-left: 50px;
+  padding: 5% 10%;
+}
+.centercontainer .loginWindow .loginUser i, .centercontainer .loginWindow .pwdUser i {
+  font-size: 25px;
+  color: #000;
+}
+.centercontainer .loginWindow .loginUser input, .centercontainer .loginWindow .pwdUser input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 3%;
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid #000;
+  letter-spacing: 5px;
+}
+.centercontainer .loginWindow .forgotPwd, .centercontainer .loginWindow .singNewUser {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+.centercontainer .loginBtn, .centercontainer .signBtn {
+  margin: 0 auto;
+  margin: 5% 0 5% 0;
+  width: 50%;
+  border: black;
+  background-color: black;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+.centercontainer .signWindow {
+  margin-left: 50px;
+  padding: 5% 10%;
+  border: 1px solid rgba(0, 0, 0, 0.712);
+  border-radius: 20px;
+}
+.centercontainer .signWindow .createLoginUser i, .centercontainer .signWindow .firstName i, .centercontainer .signWindow .secondName i, .centercontainer .signWindow .birthday i, .centercontainer .signWindow .email i, .centercontainer .signWindow .phone i, .centercontainer .signWindow .createPwdUser i, .centercontainer .signWindow .pwdUserRepeat i {
+  font-size: 25px;
+  color: #000;
+}
+.centercontainer .signWindow .createLoginUser input, .centercontainer .signWindow .firstName input, .centercontainer .signWindow .secondName input, .centercontainer .signWindow .birthday input, .centercontainer .signWindow .email input, .centercontainer .signWindow .phone input, .centercontainer .signWindow .createPwdUser input, .centercontainer .signWindow .pwdUserRepeat input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 3%;
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid black;
+  letter-spacing: 5px;
+}
+.centercontainer .signWindow .avatar {
+  margin: 5% 0 5% 0;
+}
+.centercontainer .signWindow .avatar i {
+  font-size: 25px;
+  padding-right: 10px;
+  color: #000;
+}
+.centercontainer .signWindow .agreement input {
+  width: 30px;
+  height: 30px;
+  margin-right: 3%;
+  border-radius: 5px;
+}
+.centercontainer .signWindow .agreement span, .centercontainer .signWindow .agreement a {
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 3%;
+}
+.centercontainer .messageDeclare {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: black;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

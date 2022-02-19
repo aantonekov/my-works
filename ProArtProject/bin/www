@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+// конфиги подюкчачем самыми первыми
+// require('config');
+// логер  в папке логер. там внутри pino
+// const log = require('logger').common;
+
+// раннеры, которые нам понадобятся
+const dbRunner = require('./runners/db/db');
+const webRunner = require('./runners/web');
+
+// устанавливаем цепочку запуска процессов
+const run = async () => {
+    dbRunner();
+    webRunner();
+}
+run();

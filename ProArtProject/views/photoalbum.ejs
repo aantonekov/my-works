@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    
+    <link rel="stylesheet" href="/stylesheets/photoalbum.css"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+
+    <title><%= title %></title>
+</head>
+<body>
+
+    <div class="orderConteiner hidden">
+        <div class="orderWindow">
+
+            <div class="orderButtons">
+                <div class="correctMess"><p>To correct photos - press: </p></div>
+                <button type="click" class="closeBtn">X</button>
+            </div>
+
+            <div class="orderInfo">
+                <div class="photoImgOrder"></div>
+                <div class="resumeOrder"></div>
+                <button type="click" class="confirmOrderBtn">Confirm order</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="pageContainer">
+
+        <div class="menuContarinerLeft">
+            <div class="photographInfo"></div>
+
+            <div class="lineBetween">
+                <img src="/images/curly-lines.jpg" alt="line">
+            </div>
+
+            <div class="generalInfo"></div>
+
+            <button type="submit" form="photoBlockId" class="reviewOrderBtn">Review order</button>
+
+        </div>
+
+        <div class="photoContainer">
+            <div class="albumPhotos">
+                <form name="photoChoosenForm" id="photoBlockId">
+                    <div class="photosBlock"></div>
+                </form>
+            </div>
+
+            <div class="orderConfirmToPay hidden">
+
+                <form name="orderToPayForm">
+                    <div class="numberlOrder"></div>
+                    <div class="photoOrder"></div>
+                    <div class="totalOrder"></div>
+    
+                    <div class="userInfo">
+                        <div class="clientFirstName inputLine">
+                            <i class="material-icons">account_circle</i>
+                            <input type="text" name="clientFirstName" pattern="[A-Za-zА-Яа-я]{3,}">
+                        </div>
+                        <div class="clientLastName inputLine">
+                            <i class="material-icons">account_circle</i>
+                            <input type="text" name="clientLastName" pattern="[A-Za-zА-Яа-я]{3,}">
+                        </div>
+                        <div class="clientEmail inputLine">
+                            <i class="material-icons">mail_outline</i>
+                            <input type="email" name="clientEmail">
+                        </div>
+                        <div class="clientPhone inputLine">
+                            <i class="material-icons">phone</i>
+                            <input type="number" name="clientPhone">
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="paymentButton">PAY</button>
+                </form>
+    
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/javascripts/photoalbum.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<% layout('photografPage') -%>
+<% script('/javascripts/myAlbums.js') -%>
+
+
+<div class="myAlbums">
+
+    <h2>Albums</h2>
+
+    <div class="currentAlbums">
+
+        <form name="albumListForm">
+
+            <div class="albumAction">
+                <button type="click" class="createAlbBtn"><i class="material-icons center">create_new_folder</i></button>
+                <button type="submit" class="deleteAlbBtn"><i class="material-icons center">delete_forever</i></button>
+            </div>
+
+            <div class="albumList"></div>
+        </form>
+
+    </div>
+
+    <div class="createAlbBlock hidden">
+
+        <div class="titleMenuAlb">
+            <button type="click" class="backMenuBtn"><i class="material-icons center">arrow_back</i></button>
+            <h3>Create new album</h3>
+        </div>
+
+        <div class="albumForm">
+            <form name="createAlbumForm" >
+
+                <div class="newAlbumName">
+                    <input type="text" name="name" placeholder="Create album name">
+                </div>
+
+                <div class="newAlbumDescription">
+                    <input type="text" name="description" placeholder="Album description">
+                </div>
+
+                <div class="photoPrice">
+                    <input type="number" name="price" placeholder="Add photo price">
+                    <p>UAH</p>
+                </div>
+
+                <p>You can upload 50 photos in one time.</p>
+                <div class="albumName">
+                    <input type="file" name="uploadsArray" accept=".png, .jpg, .jpeg" multiple>
+                </div>
+
+                <button type="submit" class="btn signBtn">
+                    Create <i class="material-icons right">send</i>
+                </button>
+
+            </form>
+        </div>
+
+    </div>
+
+</div>

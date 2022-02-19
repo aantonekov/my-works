@@ -1,0 +1,107 @@
+<% layout('photografPage') -%>
+<% script('/javascripts/editProfile.js') -%>
+
+
+<div class="editProfile">
+        
+    
+            <div class="personalInform">
+
+                <div class="currentInformation"></div>
+    
+                <div class="editInfoContainer">
+
+                    <h3 class="profileInfo"><a href="#">Edit personal information</a></h3>
+                    
+                    <div class="editPhotogrpherProfile hidden">
+                        <button type="click" class="upMenu btn-floating blue-grey lighten-4"><i class="material-icons">vertical_align_top</i></button>
+                        
+                        <form name="editProfileForm">
+        
+                            <div class="inputsPersonalInfo">
+                                <div class="editfirstName">
+                                    <input type="text" name="firstName" placeholder="Add new first name" pattern="[A-Za-z]{3,}">
+                                </div>
+                            
+                                <div class="editsecondName">
+                                    <input type="text" name="secondName" placeholder="Add new second name" pattern="[A-Za-z]{3,}">
+                                </div>
+                            
+                                <div class="editBirthday">
+                                    <input type="date" name="birthday" placeholder="Add birthday">
+                                </div>
+            
+                                <div class="editEmail">
+                                    <input type="email" name="email" placeholder="Add new e-mail" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})">
+                                </div>
+                            
+                                <div class="editPhone">
+                                    <input type="number" name="phone" placeholder="Add new phone number" pattern="[0-9]{5,20}">
+                                </div>
+            
+                                <div class="editAvatar">
+                                    <label><i class="material-icons">add_a_photo</i></label>
+                                    <input type="file" name="userPhoto">
+                                </div>
+        
+                                <button type="submit" class="btn signBtn">
+                                    Sign <i class="material-icons right">send</i>
+                                </button>
+                            </div>               
+                        </form>
+                    </div>
+    
+                    <div class="message hidden">
+                        <p>Success edit. Update the page.</p>
+                    </div>
+
+                    <h3 class="pwdInfo"><a href="#">Edit password</a></h3>
+    
+                    <div class="editPassword hidden">
+                        <button type="click" class="upMenuPass btn-floating blue-grey lighten-4"><i class="material-icons">vertical_align_top</i></button>
+
+                        <form name="editPasswordForm">
+            
+                            <div class="editProfilePass">
+                                <div class="currentPassword inputPass">
+                                    <label><i class="material-icons">lock_outline</i></label>
+                                    <input type="password" name="carrentUserPwd" placeholder="current password">
+                                </div>
+                
+                                <div class="newPassword inputPass">
+                                    <label><i class="material-icons">lock_outline</i></label>
+                                    <input type="password" name="newUserPwd" placeholder="new password">
+                                </div>
+                
+                                <div class="repeatPassword inputPass">
+                                    <label><i class="material-icons">lock_outline</i></label>
+                                    <input type="password" name="newUserPwd" placeholder="repeat new password">
+                                </div>
+                
+                                <div class="checkingPwd hidden">
+                                    <span>Invalid passwords.</span>
+                                </div>
+            
+                                <button type="submit" class="btn signBtn">
+                                    Sign <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+
+                            <div class="successPwd hidden">
+                                <span>Password was updating. Remember it.</span>
+                            </div>
+
+
+                        </form>
+            
+                    </div>
+        
+    
+                </div>
+
+    
+            </div>
+    
+    
+</div>
+

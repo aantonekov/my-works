@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    
+    <link rel="stylesheet" href="/stylesheets/personalPage.css"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <title>My page</title>
+</head>
+<body>
+
+    <div class="mainContainer">
+
+        <div class="photographerSide">
+
+            <div class="photographerAvatar"></div>
+            <div class="photographerName"></div>
+            
+            <div class="lineBetween">
+                
+            </div>
+
+            <div class="menuProfile">
+                <ol>
+                    <li class="myAlbums"><a href="/albums/myAlbums">Albums</a></li>
+                    <li class="myOrders"><a href="/orders/myOrders">Orders</a></li>
+                    <li class="editProfile"><a href="/profile/editProfile">Edit profile</a></li>
+                    <li class="logout">
+                        <button type="click" class="logoutProfile btn-floating blue-grey lighten-4">
+                            <i class="material-icons">exit_to_app</i>
+                        </button>
+                    </li>
+                </ol>
+            </div>
+        
+        </div>
+
+        <div class="contentSide">
+
+            <%-body -%>
+        
+        </div>
+        
+    </div>
+
+    <script src="/javascripts/personalPage.js"></script>
+    <%-scripts%>
+</body>
+</html>

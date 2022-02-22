@@ -1,0 +1,28 @@
+$bacground-pict: url(./img/2.jpg);
+
+.containerHeader{
+    height: 100px;
+    background-image: $bacground-pict;
+    background-position: center;
+    background-size: 1000px;
+    display: flex;
+    justify-content: right;
+
+    .containerBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        .navBtn {
+            color: ghostwhite;
+            position: relative;
+           
+
+            &:hover{
+                color: hotpink;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.container{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .forHeader{
+        display: flex;
+        justify-content: center;
+    }
+    .containerForm{
+        width: 500px;  
+        margin: 0 auto;
+       
+        .regBtn{
+            margin-left: 20px;
+        }
+            
+    }
+}
